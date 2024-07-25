@@ -1,5 +1,5 @@
 name: news_app
-description: "A new Flutter project."
+description: "Flutter News App."
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,11 +9,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  intl: ^0.19.0
+  floor: ^1.5.0
+  get_it: ^7.7.0
+  retrofit: ^4.1.0
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.6
+  flutter_hooks: ^0.20.5
+  cached_network_image: ^3.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  floor_generator: ^1.5.0
+  retrofit_generator: ^8.1.2
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/

@@ -3,9 +3,11 @@ import 'package:news_app/features/daily_news/domain/entities/article_entity.dart
 
 class NewsTile extends StatelessWidget {
   final ArticleEntity article;
+  final Function() onSave;
   const NewsTile({
     super.key,
     required this.article,
+    required this.onSave,
   });
 
   @override
@@ -60,7 +62,7 @@ class NewsTile extends StatelessWidget {
                           ),
                           const SizedBox(width: 10),
                           InkWell(
-                            onTap: () {},
+                            onTap: onSave,
                             splashColor: Colors.grey[200],
                             child: const Icon(
                               Icons.bookmark_border_outlined,

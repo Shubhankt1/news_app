@@ -18,8 +18,9 @@ class ArticleRepoImpl implements ArticleRepo {
       // API Call
       final httpResponse = await _newsApiService.getNewsArticles(
         apiKey: newsApiKey,
-        country: countryQuery,
-        category: categoryQuery,
+        sources: sources,
+        // country: countryQuery,
+        // category: categoryQuery,
       );
 
       // If Success
